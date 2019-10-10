@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>CV</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="MohammedHassani">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<nav>
+    <i class="fas fa-bars"> </i>
+    <img src="../praktikSide/Images/Logo.png" alt="Logo">
+    <ul>
+
+        <li class="navLi"><a href="index.html">Forside</a></li>
+        <li class="navLi"><a href="index.html">CV</a></li>
+        <li class="navLi"><a href="projekter.html">Projekter</a></li>
+        <li class="active"><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+<br>
+
+<section id="kontakt">
+    <h3>Kontakt</h3>
+
+    <h4>Email: mohammedhassani1995@gmail.com</h4>
+    <h4>Telefon nr: 40 95 26 35</h4>
+    <h4>Adresse: Ishøj</h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d72102.35804572537!2d12.241987820755234!3d55.61595839844638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465258243567cccb%3A0xc21555709d97b766!2s2635+Ish%C3%B8j!5e0!3m2!1sda!2sdk!4v1563113728042!5m2!1sda!2sdk"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</section>
+
+<footer class="soMe">
+
+    <h1>Kontakt</h1>
+    <br>
+
+    <a href="mailto: mohammedhassani1995@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://twitter.com/Maestro0410" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/mohammed-hassani-759395132/" target="_blank"> <i
+            class="fab fa-linkedin"></i></a>
+
+</footer>
+
+<div class="pageUp">
+    <a href="#"><i class="fas fa-arrow-up"></i></a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function (e) {
+
+        $("nav").click(function () {
+            $(".navLi").slideToggle(500);
+        });
+
+    });
+
+
+</script>
+
+</body>
+</html>

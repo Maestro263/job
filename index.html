@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>CV</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="MohammedHassani">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+
+<nav>
+    <i class="fas fa-bars"> </i>
+    <img src="../praktikSide/Images/Logo.png" alt="Logo">
+    <ul>
+        <li class="active"><a href="index.html">Forside</a></li>
+        <li class="navLi"><a href="#CV">CV</a></li>
+        <li class="navLi"><a href="projekter.html">Projekter</a></li>
+        <li class="navLi"><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+<br>
+
+
+<section>
+    <div class="profilBillede">
+        <img src="../praktikSide/Images/0.jpeg" alt="Mig">
+    </div>
+
+
+    <div class="about">
+        <h1>Lidt om mig </h1>
+        <hr style="background-color: #60a3bc; height:5px;">
+        <br>
+        <p>Til hverdag læser jeg multimediedesigner med fokus på web-udvikling. Indtil videre består mine kompetencer
+            af:</p>
+        <ul>
+            <li>- Html</li>
+            <li>- CSS</li>
+            <li>- jQuery</li>
+        </ul>
+        <p>Mine kompentencer vil altid være under udvikling, da jeg altid stræber efter at lære mere. Efter
+            multimediedesigner uddannelsen, skal jeg toppe uddannelsen op med en professionsbachelor i
+            web-integrator.</p>
+        <p>Min multimediedesigner uddannelse slutter til sommer 2020, og i mit fjerde semester skal jeg ud at finde en
+            praktikplads i 3 måneder.</p>
+    </div>
+</section>
+
+<div class="divide">
+</div>
+
+<section id="CV">
+    <h1>Mohammed Hassani</h1>
+    <h3>Arbejds-erfaring:</h3>
+    <ul>
+        <li> 2019- Til nu: Region Hovedstaden Lager (Moment)</li>
+        <li> 2018- Til nu: Tilkaldervikar i en SFO</li>
+        <li> 2017 – 2018: Post Nord Chauffør</li>
+        <li> 2014 – 2015: Postmand</li>
+        <li> November 2013 – Februar 2014: Telmore</li>
+        <li> Marts 2012 – Oktober 2013: ILVA Ishøj</li>
+        <li> 2011: Salgsassistent i Bilka tekstil, Hundige Waves</li>
+    </ul>
+
+    <br>
+    <h3>Uddannelse:</h3>
+    <li> 2018- Til nu: Multimediedesigner (EASJ)</li>
+    <li> 2017-2018: Medialogy (AAU)</li>
+    <li> 2011-2014: Ishøj Gymnasium</li>
+    <li> 2001- 2011: 9. klasse (afgangseksamen) Gildbroskolen</li>
+
+
+</section>
+
+<div class="pageUp">
+    <a href="#"><i class="fas fa-arrow-up"></i></a>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function (e) {
+        $(".fa-bars").click(function () {
+            $(".navLi").slideToggle(500);
+        });
+
+    });
+
+</script>
+</body>
+</html>

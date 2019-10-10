@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Projekter</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="MohammedHassani">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<nav>
+    <i class="fas fa-bars"> </i>
+    <img src="../praktikSide/Images/Logo.png" alt="Logo">
+    <ul>
+        <li class="navLi"><a href="index.html">Forside</a></li>
+        <li class="navLi"><a href="index.html">CV</a></li>
+        <li class="active"><a href="projekter.html">Projekter</a></li>
+        <li class="navLi"><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<section id="Projekter">
+    <h3>Projekter</h3>
+    <p>Her ses de projekter som jeg har arbejdet på under uddannelsen.</p>
+    <br>
+    <div class="img1">
+    <img src="../praktikSide/Images/Opgave1.png" alt="WindSurfin Seven Winds" class="mobile">
+        <img src="../praktikSide/Images/Opgave1%20Web.png" alt="WebImage" class="web">
+    </div>
+        <h4>meTours var en hjemmeside, som jeg fik lavet til min afgørende 1. semester eksamen.</h4>
+    <br>
+    <div class="img2">
+    <a href="https://mo-ha.dk/VinGården/" target="_blank"><img src="../praktikSide/Images/Opgave2.png" alt="Dominio De Pontas" class="mobile"></a>
+        <a href="https://mo-ha.dk/VinGården/" target="_blank"><img src="../praktikSide/Images/Opgave2%20web.png" alt="Dominio De Pontas" class="web"></a>
+    </div>
+        <h4>Dominio de Pontas var en opgave som jeg lavede i 2. semester til vores tema 3 projekt.</h4>
+    <br>
+    <div class="img3">
+    <a href="https://mo-ha.dk/Tema4Eksamen/" target="_blank"><img src="../praktikSide/Images/Opgave3.png" alt="Opgave3" class="mobile"></a>
+    <a href="https://mo-ha.dk/Tema4Eksamen/" target="_blank"><img src="../praktikSide/Images/Opgave3%20web.png" alt="Opgave3" class="web"></a>
+    </div>
+        <h4>Autohuset Vestergaard var en opgave som jeg lavede i 2. semester til vores Førsteårsprøve.</h4>
+
+</section>
+
+<div class="pageUp">
+    <a href="#"><i class="fas fa-arrow-up"></i></a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function (e) {
+
+        $("nav").click(function () {
+            $(".navLi").slideToggle(500);
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
