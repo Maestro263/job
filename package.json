@@ -1,5 +1,5 @@
 {
-  "name": "package.json",
+  "name": "clear",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,5 +10,21 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2"
-  }
+  },
+  "dependencies": {
+    "autoprefixer": "^9.6.5",
+    "cssnano": "^4.1.10",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "jquery": "^3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maestro263/job.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maestro263/job/issues"
+  },
+  "homepage": "https://github.com/Maestro263/job#readme"
 }
