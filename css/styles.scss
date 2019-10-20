@@ -161,7 +161,19 @@ iframe {
   text-transform: uppercase;
 }
 
-#Projekter{
+#Projekter h1{
+  font-size: 40pt;
+  letter-spacing: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#Projekter p{
+  text-align: center;
+  font-weight: bolder;
+}
+
+.opgaver{
   display: flex;
   flex-direction: column;
 }
@@ -296,6 +308,30 @@ iframe {
 
   #kontakt{
     text-align: center;
+  }
+
+  #Projekter h1{
+    font-size: 50pt;
+    letter-spacing: 40px;
+  }
+
+  .opgaver{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .opgave1{
+    margin-left: 0;
+  }
+  .opgave2{
+    margin-left: 0;
+  }
+  .opgave3{
+    margin-left: 0;
+  }
+  .opgave4{
+    margin-left: 0;
   }
 }
 
