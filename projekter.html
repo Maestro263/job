@@ -45,6 +45,41 @@
     </ul>
 </nav>
 
+<div class="infoOpg1 info">
+    <h3>2. semester MMD</h3>
+    <h4>Temaopgave 2 - Dominio de Pontas</h4>
+    <h4 style="color: red">KRAV:</h4>
+    <i class="fas fa-times"></i>
+    <p>""</p>
+</div>
+
+<div class="infoOpg2 info">
+    <h3>2. semester MMD</h3>
+    <h4>Temaopgave 2 - Dominio de Pontas</h4>
+    <h4 style="color: red">KRAV:</h4>
+    <i class="fas fa-times"></i>
+    <p>"I skal kode websiden ved hjælp af HTML5 og CSS (gerne med brug af SCSS), så den matcher jeres designoplæg og
+        målgruppe mm fra temaopgave 1. Jeres første opgave her er at sikre, at den kodede version ligner jeres
+        prototype, og dermed også jeres arbejde med detaljer i CSS.<br>
+        Siden skal være responsive og den skal være mobileFirst. Den skal være velfungerende på mobil, tablet og
+        computer, og da koden skal være mobileFirst, skal I starte med at lave CSS til mobil, og så lave breakpoints med
+        media queries så den ser pæn ud på tablet og computer.<br>
+        I skal benytte JQuery til flere elementer på siden."</p>
+    <p>jQuery, HTML, CSS</p>
+</div>
+
+<div class="infoOpg3 info">
+    <h3>2. semester MMD</h3>
+    <h4>Eksamensprojekt - Autohuset Vestergaard</h4>
+    <h4 style="color: red">KRAV:</h4>
+    <i class="fas fa-times"></i>
+    <p>"Det er ikke altid nemt at formidle den gode, enkle historie om hvilke serviceaftaler, der passer til en kunde.
+        Men det kan I! I skal definere målgrupper (personaer) via informationer fra klienten og bl.a designe et
+        kampagnesite, der varierer moderat fra AVs website."</p>
+    <p>jQuery, HTML, CSS</p>
+</div>
+
+
 <section id="Projekter">
     <h1>Projekter</h1>
     <p>Her ses de projekter som jeg har arbejdet på under uddannelsen.</p>
@@ -52,27 +87,30 @@
     <div class="all">
         <div class="container">
             <img src="images/Opgave1.png" alt="Windsurfing" class="image">
-            <div class="overlay">
+            <div class="overlay opgave1">
                 <div class="text">Windsurfing</div>
             </div>
         </div>
         <br>
         <div class="container">
             <img src="images/Opgave2.png" alt="Dominio de Pontas" class="image">
-            <div class="overlay">
+            <div class="overlay opgave2">
                 <div class="text">Vingården</div>
             </div>
         </div>
         <br>
         <div class="container">
-            <img src="images/Opgave3.png" alt="Autohuset Vestergaard">
-            <div class="overlay">
+            <img src="images/Opgave3.png" alt="Autohuset Vestergaard" class="image">
+            <div class="overlay opgave3">
                 <div class="text">Autohuset Vestergaard</div>
             </div>
             </a>
         </div>
     </div>
+
+
 </section>
+
 
 <div class="pageUp">
     <a href="#"><i class="fas fa-arrow-up"></i></a>
@@ -85,7 +123,24 @@
         $("nav").click(function () {
             $(".navLi").slideToggle(500);
         });
-
+        $(".overlay").click(function () {
+            $(".infoOpg1").css("display", "block");
+        });
+        $(".opgave2").click(function () {
+            $(".infoOpg2").css("display", "block");
+        });
+        $(".opgave3").click(function () {
+            $(".infoOpg3").css("display", "block");
+        });
+        $(".fa-times").click(function () {
+            $(".infoOpg1").css("display", "none")
+        })
+        $(".fa-times").click(function () {
+            $(".infoOpg2").css("display", "none")
+        })
+        $(".fa-times").click(function () {
+            $(".infoOpg3").css("display", "none")
+        })
     });
 
 </script>
