@@ -71,7 +71,7 @@ nav img {
 nav li :hover {
   color: complement(#abab87);
   text-decoration-line: underline;
-  transition: ease 800ms;
+  transition: ease 600ms;
 }
 
 .active {
@@ -125,6 +125,11 @@ section {
   background-color: #2196F3;
 }
 
+.sass {
+  width: 70%;
+  background-color: #0c4067;
+}
+
 .jquery {
   width: 55%;
   background-color: #5c5c5c;
@@ -138,6 +143,11 @@ section {
 .gulp {
   width: 15%;
   background-color: #efec2f;
+}
+
+.adobe {
+  width: 55%;
+  background-color: #ef0019;
 }
 
 /*Projekt-side*/
@@ -227,9 +237,9 @@ section {
   text-align: center;
   padding: 20px;
   color: #ffffff;
-  position: absolute;
+  position: sticky;
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
 }
 
 .soMe i {
@@ -265,6 +275,7 @@ iframe {
   color: #ffffff;
   padding-left: 5px;
   padding-right: 5px;
+
 }
 
 .pageUp :hover {
@@ -304,8 +315,9 @@ iframe {
   }
 
   #CV {
-    position: relative;
-    left: 35%;
+    margin-right: 350px;
+    margin-left: 350px;
+
   }
 
   /*Projekt-side*/
